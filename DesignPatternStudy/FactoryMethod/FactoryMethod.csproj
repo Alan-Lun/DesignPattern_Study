@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="SimpleFactorySample\AttributeSample\" />
     <Folder Include="SimpleFactorySample\DictionarySample\" />
   </ItemGroup>
 

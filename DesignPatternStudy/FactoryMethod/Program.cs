@@ -27,6 +27,12 @@ namespace FactoryMethod
             e.Request();
             f.Request();
 
+            //SimpleFactorySample Attribute Sample
+            var g = SimpleFactorySample.AttributeSample.FactoryA.GetInstance(SimpleFactorySample.AttributeSample.ProductTypeEnum.ProductEnumA);
+            var h = SimpleFactorySample.AttributeSample.FactoryA.GetInstance(SimpleFactorySample.AttributeSample.ProductTypeEnum.ProductEnumB);
+            g.Request();
+            h.Request();
+
             Console.Read();
         }
     }
