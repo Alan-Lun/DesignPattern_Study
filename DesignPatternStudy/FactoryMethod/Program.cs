@@ -33,6 +33,11 @@ namespace FactoryMethod
             g.Request();
             h.Request();
 
+            //SimpleFactorySample Dictionary Sample
+            var i = SimpleFactorySample.DictionarySample.FactoryA.GetInstance(SimpleFactorySample.DictionarySample.ProductTypeEnum.ProductEnumA);
+            var j = SimpleFactorySample.DictionarySample.FactoryA.GetInstance(SimpleFactorySample.DictionarySample.ProductTypeEnum.ProductEnumB);
+            i.Request();
+            j.Request();
             Console.Read();
         }
     }
